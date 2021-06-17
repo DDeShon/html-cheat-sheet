@@ -19,7 +19,7 @@
     <h4>Heading Four</h4>
     <h5>Heading Five</h5>
     <h6>Heading Six</h6>
-
+    <hr>
     <!-- Paragraph -->
     <h2>Paragraphs</h2>
     <p>
@@ -37,7 +37,7 @@
       hic illum ea minus ducimus fugiat, maiores recusandae iusto laboriosam
       similique.
     </p>
-
+    <hr>
     <!-- Inline and block elements -->
     <h2>Inline and Block Elements</h2>
     <p>
@@ -52,12 +52,14 @@
     <em>em is an inline tag that makes the surrounded text italic</em>
     <br />
     <br />
-
+    <hr>    
     <!-- Anchor tag and links -->
+    <h2>Anchor Tag and Links</h2>
     <p>The anchor tag is used to create links on the page, as follows:</p>
     <a href="www.google.com" target="_blank">www.google.com</a>
-
+    <hr>
     <!-- Tag Attributes -->
+    <h2>Tag Attributes</h2>
     <p>
       All tags can have attributes
       <strong>(title, target, class and id)</strong>. These tag attributes
@@ -69,7 +71,7 @@
       attributeValue is always enclosed in quotation marks
       <strong>("someClass", "someId", "_blank")</strong>.
     </p>
-
+    <hr>
     <!-- Lists -->
     <h2>Lists</h2>
     <p>
@@ -95,7 +97,7 @@
       </ol>
       and differ from unordered lists by replacing the bullet points with numbers. 
     </p>
-
+    <hr>
     <!-- Tables -->
     <h2>Tables</h2>
     <p>Tables are formed using the <strong>table, thead(table head), tr(table row), th(table heading), tbody(table body), and td(table data)</strong> tags. The <strong>thead and th</strong> tags form the data into the heading of the table, and the <strong>tbody and td</strong> tags form the body of the table corresponding to the table heading.</p>
@@ -125,5 +127,57 @@
             </tr>
         </tbody>
     </table>
+    <hr>
+    <!-- Forms -->
+    <h2>Forms</h2>
+    <p>Forms are used to capture data input from the user. They use the <strong>form, label and input</strong> tags to set up the look of the form <em>(HTML can only set up the look of the form, any action requires a programming language capable of dynamic functionality (php, js, python)</em>. The action tag is used to point the form to a functional page <strong>(process.php)</strong> and the method tag controls how the form is handled <strong>(GET, POST)</strong>. The label element uses the <em>for</em> tag to designate the corresponding input field, and the input element <em>name</em> tag that matches the <em>for</em> tag from the label.</p>
+    <form action="process.php" method="POST">
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" placeholder="Enter first name">  
+        </div>
+        <br>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" placeholder="Enter last name"> 
+        </div>
+        <br>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email"> 
+        </div>
+        <br>
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender</label>
+            <select name="gender" id="">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" value="30">
+        </div>
+        <br>
+        <div>
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+    <hr>
+    <!-- Buttons -->
+    <h2>Buttons</h2>
+    <p>Buttons can be created using the <strong>input type="submit"</strong> element as seen in the form example above, but it can also be created using the <strong>button</strong> element. Using the <strong>button</strong> element requires a respective element in JavaScript in order for the button to have any action.</p>
+    <button click="someFunction">Click Me</button>
+    <div style="margin-top:500px"></div>
   </body>
 </html>

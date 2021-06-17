@@ -11,7 +11,7 @@
     <h1>Headings</h1>
     <p>
       Headings have different sizes based on the heading hierarchy, h1 being the
-      largest and decreasing in size:
+      largest and decreasing in size. There is usually one h1 heading on a page, with other headings <strong>(subheadings, paragraph headings)</strong> using h2-h6, depending on importance.
     </p>
     <h1>Heading One</h1>
     <h2>Heading Two</h2>
@@ -71,6 +71,7 @@
     </p>
 
     <!-- Lists -->
+    <h2>Lists</h2>
     <p>
       There are two types of list: Unordered and Ordered. Unordered lists use
       the <em>ul</em> tag and the list items are enclosed within
@@ -94,5 +95,35 @@
       </ol>
       and differ from unordered lists by replacing the bullet points with numbers. 
     </p>
+
+    <!-- Tables -->
+    <h2>Tables</h2>
+    <p>Tables are formed using the <strong>table, thead(table head), tr(table row), th(table heading), tbody(table body), and td(table data)</strong> tags. The <strong>thead and th</strong> tags form the data into the heading of the table, and the <strong>tbody and td</strong> tags form the body of the table corresponding to the table heading.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>User One</td>
+                <td>user1@something.com</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>User Two</td>
+                <td>user2@something.com</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>User Three</td>
+                <td>user3@something.com</td>
+                <td>52</td>
+            </tr>
+        </tbody>
+    </table>
   </body>
 </html>

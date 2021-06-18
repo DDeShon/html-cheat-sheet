@@ -26,6 +26,7 @@ p {
   margin-bottom: 10px;
 }
 
-strong {
+strong,
+em {
   font-size: 1.2rem;
 }
